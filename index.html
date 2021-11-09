@@ -23,14 +23,17 @@
         </style>
     <body>
         <script>
-            function doSomething() {
-  var text = document.getElementById("text-file").value;
+        function doSomething() {
+  var text = document.getElementById("myInput").value;
 
-  if (text.includes("Raven")) {
-    document.getElementById("susssy").innerHTML: "You've completed the challenge";
+  if (text.includes("apple")) {
+    console.log("do something special because text contains apple");
+  }
+  else if (text.includes("ball")) {
+    console.log("do something special because text contains ball");
   }
   else {
-    document.getElementById("Wrong Password").innerHTML: "Wrong";
+    console.log("text contains no special word");
   }
 }
             
@@ -95,9 +98,9 @@ When these people talk too much, put that shit in slow motion, yeah <br>
         </div>
         
         <button id="sheesh" onclick="funcction()">click me</button> <br>
-        <form id="password-lmao" action="input-field">
+        <form id="password-lmao">
             <label for="password">Password</label><br>
-            <input type="text" id="text-file" name="passw" value="" onkeyup="doSomething()">
+            <input type="text" id="myInput" onkeyup="doSomething()">
         </form>
         <p id="susssy"></p>
         
