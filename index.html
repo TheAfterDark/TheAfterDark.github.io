@@ -23,6 +23,16 @@
         </style>
     <body>
         <script>
+            function doSomething() {
+  var text = document.getElementById("text-file").value;
+
+  if (text.includes("Raven")) {
+    console.log("You have completed the challenge");
+  }
+  else {
+    console.log("Wrong Password");
+  }
+}
             
             
             function funcction() {
@@ -85,9 +95,9 @@ When these people talk too much, put that shit in slow motion, yeah <br>
         </div>
         
         <button id="sheesh" onclick="funcction()">click me</button> <br>
-        <form action="input-field">
+        <form id="password-lmao" action="input-field">
             <label for="password">Password</label><br>
-            <input type="text" id="text-file" name="passw" value=""
+            <input type="text" id="text-file" name="passw" onkeyup="doSomething()"
         </form>
         
 
